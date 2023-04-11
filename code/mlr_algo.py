@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Author: Omkar
-"""
-
-# -*- coding: utf-8 -*-
 
 #-----------------------------imports-----------------------------------------#
 import csv
@@ -278,22 +273,6 @@ def partition(crop_name,crop_Y_pred, start, end):
         
     return right    
 #-----------------------------------------------------------------------------#  
-
-
-
-
-    '''reader = csv.DictReader(open('metasort.csv', 'r'))
-    result = sorted(reader, key=lambda d: float(d['Production']),reverse=True)
-    writer = csv.DictWriter(open('output.csv', 'w'), reader.fieldnames)
-    writer.writeheader()
-    writer.writerows(result)   
-    import json
-    jsonfile=open('sort.json','w')
-    jsonfile.write(json.dumps(list(csv.reader(open('output.csv')))))
-    os.remove('metacrops.csv')
-    os.remove('metacrops11.csv')
-'''
-
 
 
 #-----------------------conv crop list to string------------------------------#
